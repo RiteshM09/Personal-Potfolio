@@ -1,0 +1,78 @@
+.card{
+        background: linear-gradient(to bottom right, #F5533F, #EDEDED);
+        font-family: 'Courier New', monospace;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1A1A1A;  
+}
+
+.id-card {
+    background: #F8F5F2;
+    border-radius: 20px;
+    padding: 1rem;
+    max-width: 500px;
+    width: 90vw;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    position: relative;
+  }
+
+  .profile-pic {
+    width: 15vw;
+    height: 20v;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 5px 5px 0 #1A1A1A;
+  }
+
+  .label {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  .personal-site {
+    background: #0d010189;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    font-size: 1.6rem;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .id-bottom {
+    font-size: 0.95rem;
+    margin-top: 2rem;
+  }
+
+  .identity-code {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FF766B;
+    font-family: monospace;
+  }
+
+  .red-accent {
+    color: #F5533F;
+  }
+  .btn-success{
+    width: 150px;
+    border-radius: 50px;
+    padding: 10px
+  }
+
+@media (min-width:992px){
+  .navbar-collapse{
+    display: none;
+  }
+  .btn-success{
+    width: 15vw;
+    border-radius: 50px;
+    padding: 10px
+  }
+
+.navbar-collapse{
+    padding-left:10rem;
+  }
+
+}
