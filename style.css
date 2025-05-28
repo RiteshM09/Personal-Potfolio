@@ -13,7 +13,9 @@ html{
         color: #1A1A1A;  
     
 }
-
+.About{
+  100vh;
+}
 
 
   .profile-pic {
@@ -121,6 +123,8 @@ html{
     box-shadow:0 3px 10px rgba(0, 0, 0, 1);
   }
 
-
+  .d-block{
+    padding-left: 50px;
+  }
 }
 
