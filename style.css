@@ -1,11 +1,17 @@
+html{
+  scroll-behavior: smooth;
+}
+
 .card{
-        background: linear-gradient(to bottom right, #F5533F, #EDEDED);
+        /* background: linear-gradient(to bottom right, #F5533F, #EDEDED); */
+        background-image: url("5.jpg");
         font-family: 'Courier New', monospace;
-        min-height: 80vh;
+        min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
         color: #1A1A1A;  
+    
 }
 
 
@@ -52,18 +58,44 @@
     border-radius: 50px;
     padding: 10px
   }
+
+
   @media (min-width:992px)
   {
+    .id-card{
+      background-image: url("icard1.jpg") !important;
+    }
+    /* nav for wide screen */
+    .navbar{
+     
+      /* background-color:transparent !important; */
+     
+    }
+  
+
+    .top-section{
+      background-image: url("home\ background\ 2.jpg"); 
+
+    }
     .id-card {
       background: #F8F5F2;
       border-radius: 20px;
       padding: 1rem;
-      width: 70vmax;
-      height: 45vh;
+      width: 65vmax;
+      height: 62vmin;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
       position: relative;
     }
   }
+  /* navbar for small and medium screen  */
+    @media (max-width:992px){
+    .navbar{
+      background-color:black;
+    }
+
+  }
+
+
 @media (min-width:992px ){
   .label{
     font-size: 2rem;
@@ -72,17 +104,23 @@
     font-size: 2.5rem;
   }
 
-  .navbar-collapse{
-    display: none;
-  }
+ 
   .btn-success{
     width: 15vw;
     border-radius: 50px;
     padding: 10px
   }
 
-.navbar-collapse{
-    padding-left:10rem;
+
+  .navbar{
+    transition: all 0.5s;
+  }
+  
+  .navbar-scrolled {
+    background-color: black;
+    box-shadow:0 3px 10px rgba(0, 0, 0, 1);
   }
 
+
 }
+
