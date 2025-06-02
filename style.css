@@ -13,10 +13,7 @@ html{
         color: #1A1A1A;  
 }
 /* z index elements hero section */
-.element-1{
-  display: none;
-}
-.element-2{
+.element-1,.element-2,.element-3,.image-about-ovestack{
   display: none;
 }
 
@@ -69,6 +66,8 @@ html{
   {
     .id-card{
       background-image: url("icard1.jpg") !important;
+   
+    
     }
     .element-1{
       display: block;
@@ -93,12 +92,25 @@ html{
       font-weight:700;
     }
     
-    /* nav for wide screen */
-    .navbar{
-     
-      /* background-color:transparent !important; */
-     
+    .element-3{
+      display: flex;
+      border-radius: 50%;
+      bottom: -104px;
+      left: -104px;
+      animation: spin 3s linear infinite;
     }
+
+    @keyframes spin{
+      from{
+        transform: rotate(0deg);
+
+      }
+      to{
+        transform: rotate(360deg);
+      }
+    }
+
+    /* nav for wide screen */
 
     .top-section{
       background-image: url("home\ background\ 2.jpg"); 
@@ -109,7 +121,8 @@ html{
       border-radius: 20px;
       padding: 1rem;
       width: 65vmax;
-      height: 62vmin;
+      max-width: 800px;
+      height: auto;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
       position: relative;
     }
@@ -151,5 +164,13 @@ html{
   .d-block{
     padding-left: 50px;
   }
+  /* about section */
+  .image-about-ovestack{
+    display: block;
+    bottom: -120px;
+    left: -30px;
+  }
+
+
 }
 
