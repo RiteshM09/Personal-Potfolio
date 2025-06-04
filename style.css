@@ -58,6 +58,7 @@ html{
     width: 150px;
     border-radius: 50px;
     padding: 10px
+ 
   }
 
 
@@ -137,6 +138,7 @@ html{
 
 
 @media (min-width:992px ){
+
   .label{
     font-size: 2rem;
   }
@@ -168,7 +170,7 @@ html{
   .image-about-ovestack{
     display: block;
     bottom: -120px;
-    left: -30px;
+    left: -50px;
   }
 
 
