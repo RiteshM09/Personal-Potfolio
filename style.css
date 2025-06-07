@@ -66,6 +66,10 @@ html{
 
   @media (min-width:992px)
   {
+    /* about portrait image */
+    .image-about-ovestack{
+      box-shadow: 4px 4px 15px gray;
+    }
     .id-card{
       background-image: url("icard1.jpg") !important;
    
