@@ -66,6 +66,11 @@ html{
 
   @media (min-width:992px)
   {
+    .container-fluid img:hover{ 
+      transform: scale(1.1); 
+    }  
+    
+
     /* about portrait image */
     .image-about-ovestack{
       box-shadow: 4px 4px 15px gray;
@@ -180,4 +185,3 @@ html{
 
 
 }
-
