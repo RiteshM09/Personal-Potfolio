@@ -61,14 +61,15 @@ html{
     padding: 10px
  
   }
-
+  /* card image */
+  .container-fluid img:hover{ 
+    transform: scale(1.1); 
+  }  
 
 
   @media (min-width:992px)
   {
-    .container-fluid img:hover{ 
-      transform: scale(1.1); 
-    }  
+    
     
 
     /* about portrait image */
