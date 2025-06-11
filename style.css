@@ -61,10 +61,8 @@ html{
     padding: 10px
  
   }
-  /* card image */
-  .container-fluid img:hover{ 
-    transform: scale(1.1); 
-  }  
+
+  
 
 
   @media (min-width:992px)
@@ -186,3 +184,33 @@ html{
 
 
 }
+
+.grid-card:hover{
+    cursor: pointer;
+    transition:0.5s ease;
+    transform: scale(1.05);
+  
+}
+.card-img{
+  box-shadow:1px 12px 2px 1px rgba(173, 173, 222, 0.2);
+  border-radius: 5% !important;
+}
+
+
+/* potfolio card */
+.grid-card{
+  max-height: 56vh;
+  cursor: pointer;
+}
+
+@media (max-width:1025px) {
+  .grid-card{
+    height: 40vh;
+  }
+
+  .container-fluid{
+    font-size: 1.5rem;
+  }
+
+}
+
