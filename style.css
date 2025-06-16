@@ -195,12 +195,19 @@ html{
   box-shadow:1px 12px 2px 1px rgba(173, 173, 222, 0.2);
   border-radius: 5% !important;
 }
+/* Form - icons - corner */
+.rounded_corner{
 
+  background-color: blue;
+  padding: 30px !important;
+  border-radius: 50%;
+}
 
 /* potfolio card */
 .grid-card{
   max-height: 56vh;
   cursor: pointer;
+
 }
 
 @media (max-width:1025px) {
@@ -212,5 +219,18 @@ html{
     font-size: 1.5rem;
   }
 
+  .Icons-Area{
+    margin-top: 2.5rem;
+    padding: 1rem;
+  }
+
 }
+/* form section - icons  */
+.Icons-Area{
+  padding-top: 3rem;
+}
+
+.icons{
+  background-color:rgb(230, 52%, 63%);
+} 
 
