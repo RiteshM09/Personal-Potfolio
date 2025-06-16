@@ -225,6 +225,7 @@ html{
   }
 
 }
+
 /* form section - icons  */
 .Icons-Area{
   padding-top: 3rem;
@@ -234,3 +235,30 @@ html{
   background-color:rgb(230, 52%, 63%);
 } 
 
+
+/* Scroll to top button */
+.back-to-top{ 
+  height: 50px;
+  width: 40px;
+  bottom: 30px;
+  right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+ transform: scale(0);
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+.back-to-top:hover{
+  transition: all 0.5s ease-in-out;
+
+  bottom: 40px;
+}
+
+.back-to-top.show{
+  transform: scale(1);
+}
