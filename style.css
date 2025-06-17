@@ -1,6 +1,10 @@
 html{
   scroll-behavior: smooth;
 }
+* {
+  box-sizing: border-box;
+}
+
 
 .card{
         /* background: linear-gradient(to bottom right, #F5533F, #EDEDED); */
@@ -62,23 +66,22 @@ html{
  
   }
 
+  @media (min-width:) {
+    
+  }
   
 
 
   @media (min-width:992px)
   {
-    
-    
-
     /* about portrait image */
     .image-about-ovestack{
       box-shadow: 4px 4px 15px gray;
     }
     .id-card{
       background-image: url("icard1.jpg") !important;
-   
-    
     }
+
     .element-1{
       display: block;
       
@@ -131,19 +134,67 @@ html{
       border-radius: 20px;
       padding: 1rem;
       width: 65vmax;
-      max-width: 800px;
+      max-width: 810px;
       height: auto;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
       position: relative;
     }
   }
-  /* navbar for small and medium screen  */
-    @media (max-width:992px){
-    .navbar{
-      background-color:black;
+
+/* for tablet screen */
+  @media (min-width:992px ) and (max-width:1025px) {
+    #cv-button button{
+      transform: scale(0);
+    }
+    .nav-item a {
+      font-size: 1rem;
+      font-weight: lighter !important;
+
     }
 
   }
+  @media (max-width:392px) {
+     .navbar-brand h1{
+      font-size: 1.2rem;
+    }
+    
+  }
+
+  /* navbar for small and medium screen  */
+  @media  (max-width:992px){
+    .navbar{
+      background-color:black;
+    }
+    
+  }
+
+
+    @media (min-width:629px) and (max-width:992px){
+    
+  
+    .personal-site{
+      font-size: 2.5rem;
+      margin: 20px;
+    }
+    .card-title{
+      font-size: 1.75rem;
+    }
+    .mt-3{
+      font-size: 3.5rem;
+    }
+    .profile-pic{
+      transform: scale(1.2);
+    }
+    #about-me, #quote{
+      padding: 20px;
+      font-size: 1.5rem!important;
+      font-weight: bolder;
+      border-radius: 10px;
+      
+    }
+
+  }
+
 
 
 @media (min-width:992px ){
@@ -175,6 +226,7 @@ html{
   .d-block{
     padding-left: 50px;
   }
+
   /* about section */
   .image-about-ovestack{
     display: block;
@@ -191,6 +243,7 @@ html{
     transform: scale(1.05);
   
 }
+
 .card-img{
   box-shadow:1px 12px 2px 1px rgba(173, 173, 222, 0.2);
   border-radius: 5% !important;

@@ -32,3 +32,23 @@ document.addEventListener('scroll', () =>{
 document.querySelector('.back-to-top').addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+
+// hides the navbar  when clicks .
+  document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".nav-link");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        // Only collapse if menu is open (visible on smaller screens)
+        if (window.innerWidth < 992 && navbarCollapse.classList.contains("show")) {
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: true
+          });
+          bsCollapse.hide();
+        }
+      });
+    });
+  });
+
