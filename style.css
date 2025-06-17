@@ -8,7 +8,7 @@ html{
 
 .card{
         /* background: linear-gradient(to bottom right, #F5533F, #EDEDED); */
-        background-image: url("card\ bg\ img.jpg");
+        background-image: url("Assets/card\ bg\ img.jpg");
         font-family: 'Courier New', monospace;
         min-height: 100vh;
         display: flex;
@@ -65,11 +65,6 @@ html{
     padding: 10px
  
   }
-
-  @media (min-width:) {
-    
-  }
-  
 
 
   @media (min-width:992px)
@@ -314,4 +309,25 @@ html{
 
 .back-to-top.show{
   transform: scale(1);
+}
+
+.fa-instagram, .fa-linkedin, .fa-square-facebook{
+  cursor: pointer;
+}
+
+.fa-linkedin{
+color: #0e76a8;
+}
+
+.fa-instagram{
+  color: white;
+  background:radial-gradient(circle at 30% 110%,
+            #ffdb8b 0%,
+            #ee653d 25%,
+            #d42e81 50%,
+            #a237b6 75%,
+            #3e57bc 100%);
+  border-radius: 10px;
+  box-shadow: 0px 15px 40px 1px rgba(0, 0, 0, 0.5);
+
 }
