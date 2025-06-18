@@ -6,6 +6,24 @@ html{
 }
 
 
+/* nav bar items  */
+.navbar-nav .nav-link {
+  transition: transform 0.3s ease; 
+  display: inline-block; 
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.2);
+}
+
+
+/* nav download button */
+#cv-button:active{
+  box-shadow: 2px 2px 4px green;
+}
+
+
+
 .card{
         /* background: linear-gradient(to bottom right, #F5533F, #EDEDED); */
         background-image: url("Assets/card\ bg\ img.jpg");
@@ -74,7 +92,7 @@ html{
       box-shadow: 4px 4px 15px gray;
     }
     .id-card{
-      background-image: url("icard1.jpg") !important;
+      background-image: url("Assets/icard1.jpg") !important;
     }
 
     .element-1{
@@ -301,6 +319,10 @@ html{
   z-index: 999;
 }
 
+#TnC:hover{
+  text-decoration: underline;
+}
+
 .back-to-top:hover{
   transition: all 0.5s ease-in-out;
 
@@ -330,4 +352,17 @@ color: #0e76a8;
   border-radius: 10px;
   box-shadow: 0px 15px 40px 1px rgba(0, 0, 0, 0.5);
 
+}
+.icons-items{
+  transition: all 0.1 ease-in-out;
+}
+
+.icons-items:hover{
+  transform: scale(1.3);
+
+}
+
+.icons-items:active{
+  box-shadow: 1px 2px 4px #d42e81;
+  opacity: 90%;
 }
