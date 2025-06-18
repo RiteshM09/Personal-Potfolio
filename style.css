@@ -6,6 +6,13 @@ html{
 }
 
 
+/* form section */
+#form{
+  margin-top: 100px !important;
+  padding-top: 100px !important;
+}
+
+
 /* nav bar items  */
 .navbar-nav .nav-link {
   transition: transform 0.3s ease; 
