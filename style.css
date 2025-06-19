@@ -11,7 +11,18 @@ html{
   margin-top: 100px !important;
   padding-top: 100px !important;
 }
+.spinner-border{
+  display: none;
+  transition: all;
+  
+}
+#submit-btn:active{
+    
+    .d-grid span{
+      transform: scale(0) !important;
+    }
 
+}
 
 /* nav bar items  */
 .navbar-nav .nav-link {

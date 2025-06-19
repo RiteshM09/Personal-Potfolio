@@ -10,6 +10,18 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="icon" type="image/png" href="Assets/hero section/R (2).png">
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "-_YZzMzY5vM-ugOGm",
+      });
+    })();
+  </script>
+
 </head>
 
 <body>
@@ -19,7 +31,7 @@
     <nav class="navbar navbar-expand-lg fixed-top  ">
       <div class="container-fluid">
         <a class="navbar-brand " href="#">
-          <h1 class="font-monospace px-2"id="top-name"> Ritesh Mendhekar</h1>
+          <h1 class="font-monospace px-2" id="top-name"> Ritesh Mendhekar</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +59,7 @@
             </li>
             <a href="Assets/rotate image.png" download class="btn btn-success" id="cv-button">
               Download CV
-            </a>            
+            </a>
         </div>
       </div>
     </nav>
@@ -61,8 +73,8 @@
           <h3 class="num text-info fs-1 fw-light ">2</h3>
           <p class="lh-sm">Years of Experience</p>
         </div>
-        <div class="element-3 position-absolute p-4 rounded-3"><img src="Assets/RITESH__1_-removebg-preview.png" width="180"
-            height="182" alt="I'm developer from India" class="rotate-img"></div>
+        <div class="element-3 position-absolute p-4 rounded-3"><img src="Assets/RITESH__1_-removebg-preview.png"
+            width="180" height="182" alt="I'm developer from India" class="rotate-img"></div>
 
 
         <img src="Assets/hero section/profile pic.jpeg" alt="Profile" class="profile-pic mb-3">
@@ -75,7 +87,7 @@
             <h5 class="card-title text-light">Web Developler From</h5>
             <p class="card-text text-light">Nagpur,Maharshatra</p>
             <a href="#about">
-            <button type="button" class="btn btn-danger" id="about-me">Aboute Me</button> </a>
+              <button type="button" class="btn btn-danger" id="about-me">Aboute Me</button> </a>
             <a href="#form" class="btn btn-primary" id="quote">Get a Quote</a>
           </div>
 
@@ -350,20 +362,23 @@
             </div>
 
             <form>
-              <label class="form-label px-2">Name</label>
+              <label class="form-label px-2" id="name">Name</label>
               <input type="text" class="form-control" placeholder="Enter your name">
 
-              <label for="exampleInputEmail1" class="form-label px-2">Email address</label>
+              <label for="exampleInputEmail1" class="form-label px-2" id="email">Email address</label>
               <input type="email" placeholder="Enter your mail" class="form-control" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label pt-3 px-2">Message</label>
+            <label for="exampleFormControlTextarea1" class="form-label pt-3 px-2" id="message">Message</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
 
           <div class="d-grid gap-2 col-12 mx-auto">
-            <button class="btn btn-danger" type="button">Send Message</button>
+            <button class="btn btn-danger" id="submit-btn" type="button" oneclick="sendmail()" > 
+             Send Message 
+
+            </button>
           </div>
 
           </form>
@@ -399,7 +414,8 @@
 
           <!-- Icon 3 -->
           <div class="content-icons d-flex align-items-start gap-4 mb-3">
-            <div class="icons bg-danger bg-opacity-50 p-3 rounded_corner text-white "><i class="fa-solid fa-phone fs-3"></i>
+            <div class="icons bg-danger bg-opacity-50 p-3 rounded_corner text-white "><i
+                class="fa-solid fa-phone fs-3"></i>
             </div>
             <!-- content 3 -->
             <div class="card-items ">
@@ -411,34 +427,38 @@
         </div>
   </section>
 
-<!--fixed  back to top button -->
+  <!--fixed  back to top button -->
   <div class="back-to-top position-fixed bg-light  bg-opacity-50 d-flex">
     <i class="fa-solid fa-arrow-up-long text-black "></i>
   </div>
 
   <!-- footer -->
   <section class="footer bg-secondary text-white bg-opacity-50" id="Footer">
-      <div class=" container footer-card py-5 d-flex flex-wrap align-items-center justify-content-evenly">
-  
-        <!-- Left Side: Texts -->
-        <div class="footer-info d-flex flex-column flex-md-row gap-4 align-items-center  mb-2 ">
-          <p class="card-text mb-0 text-start  ">© 2025 made by Ritesh Mendhekar</p>
-          <p class="card-text mb-0 text-info t" id="TnC">Terms & Conditions</p>
-        </div>
-  
-        <!-- Right Side: Icons -->
-        <div class="footer-icons  d-flex gap-4 mb-2">
-         
-          <a href="https://github.com/RiteshM09" target="_blank" class="icons-items"><i class="fa-brands fa-github fs-3 text-dark"></i></a>
-          <a href="https://www.linkedin.com/in/ritesh-mendhekar-b981201b8/" target="_blank" class="icons-items"><i class="fa-brands fa-linkedin fs-3 "></i></a>
-          <a href="https://github.com/RiteshM09" target="_blank"  class="icons-items"><i class="fa-brands fa-x-twitter fs-3 text-dark"></i></a>
-          <a href="https://www.instagram.com/ritessh100/" target="_blank" class="icons-items"><i class="fa-brands fa-instagram fs-3"></i></a>
-        </div>
-  
+    <div class=" container footer-card py-5 d-flex flex-wrap align-items-center justify-content-evenly">
+
+      <!-- Left Side: Texts -->
+      <div class="footer-info d-flex flex-column flex-md-row gap-4 align-items-center  mb-2 ">
+        <p class="card-text mb-0 text-start  ">© 2025 made by Ritesh Mendhekar</p>
+        <p class="card-text mb-0 text-info t" id="TnC">Terms & Conditions</p>
       </div>
 
+      <!-- Right Side: Icons -->
+      <div class="footer-icons  d-flex gap-4 mb-2">
+
+        <a href="https://github.com/RiteshM09" target="_blank" class="icons-items"><i
+            class="fa-brands fa-github fs-3 text-dark"></i></a>
+        <a href="https://www.linkedin.com/in/ritesh-mendhekar-b981201b8/" target="_blank" class="icons-items"><i
+            class="fa-brands fa-linkedin fs-3 "></i></a>
+        <a href="https://github.com/RiteshM09" target="_blank" class="icons-items"><i
+            class="fa-brands fa-x-twitter fs-3 text-dark"></i></a>
+        <a href="https://www.instagram.com/ritessh100/" target="_blank" class="icons-items"><i
+            class="fa-brands fa-instagram fs-3"></i></a>
+      </div>
+
+    </div>
+
   </section>
-  
+
 
   <script src="script.js"></script>
 

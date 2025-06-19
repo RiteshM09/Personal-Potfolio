@@ -52,3 +52,20 @@ document.querySelector('.back-to-top').addEventListener('click', () => {
     });
   });
 
+// EMAIL js service
+
+function sendmail() {
+  let templateParams = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  emailjs.send("service_y2f7y0q", "template_rpz390t", templateParams)
+    .then(() => {
+      alert("✅ Email sent successfully!");
+    })
+    .catch((error) => {
+      alert("❌ Email not sent. Error: " + error.text);
+    });
+}
