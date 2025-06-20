@@ -52,7 +52,7 @@ document.querySelector('.back-to-top').addEventListener('click', () => {
     });
   });
 
-// EMAIL js service
+
 
 // function sendmail() {
 //   let templateParams = {
@@ -65,6 +65,8 @@ document.querySelector('.back-to-top').addEventListener('click', () => {
 //     .then(() =>alert("✅ Email sent successfully!").catch(() => alert("Email not sent. Error: ")));
 // }
 
+
+// EMAIL js service
 function sendmail() {
   const nameField = document.getElementById("name");
   const emailField = document.getElementById("email");
