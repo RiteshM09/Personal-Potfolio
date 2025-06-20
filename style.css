@@ -384,3 +384,23 @@ color: #0e76a8;
   box-shadow: 1px 2px 4px #d42e81;
   opacity: 90%;
 }
+#top-name{
+  border-right: 4px solid;
+  width: 100%;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+  typing 2s steps(16),
+  cursor .4s step-end infinite alternate;
+}
+/* cursor blinking */
+@keyframes cursor {
+  50%{ border-color: transparent}
+  
+}
+
+/* typing effect */
+@keyframes typing {
+  from { width: 0;}
+}
