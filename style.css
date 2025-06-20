@@ -384,7 +384,7 @@ color: #0e76a8;
   box-shadow: 1px 2px 4px #d42e81;
   opacity: 90%;
 }
-#top-name{
+.navbar-brand h1{ 
   border-right: 4px solid;
   width: 100%;
   letter-spacing: 1px;
@@ -402,5 +402,5 @@ color: #0e76a8;
 
 /* typing effect */
 @keyframes typing {
-  from { width: 0;}
+  from { width: 0}
 }
