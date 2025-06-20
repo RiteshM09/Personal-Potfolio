@@ -54,18 +54,54 @@ document.querySelector('.back-to-top').addEventListener('click', () => {
 
 // EMAIL js service
 
+// function sendmail() {
+//   let templateParams = {
+//     name: document.getElementById("name").value,
+//     email: document.getElementById("email").value,
+//     message: document.getElementById("message").value,
+//   };
+
+//   emailjs.send("service_y2f7y0q", "template_rpz390t", templateParams)
+//     .then(() =>alert("✅ Email sent successfully!").catch(() => alert("Email not sent. Error: ")));
+// }
+
 function sendmail() {
-  let templateParams = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
+  const nameField = document.getElementById("name");
+  const emailField = document.getElementById("email");
+  const messageField = document.getElementById("message");
+  const submitBtn = document.getElementById("submit-btn");
+
+  const name = nameField.value.trim();
+  const email = emailField.value.trim();
+  const message = messageField.value.trim();
+
+  if (!name || !email || !message) {
+    alert("⚠️ Please fill in all fields before submitting.");
+    return;
+  }
+
+  // ⏳ Disable button and show loading
+  submitBtn.disabled = true;
+  submitBtn.innerText = "Sending...";
+
+  const templateParams = { name, email, message };
 
   emailjs.send("service_y2f7y0q", "template_rpz390t", templateParams)
     .then(() => {
       alert("✅ Email sent successfully!");
+      
+      // 🧼 Clear form fields
+      nameField.value = "";
+      emailField.value = "";
+      messageField.value = "";
     })
     .catch((error) => {
-      alert("❌ Email not sent. Error: " + error.text);
+      console.error("EmailJS Error:", error);
+      alert("Email not sent. Error: " + JSON.stringify(error));
+    })
+    .finally(() => {
+      // ✅ Re-enable button and reset text
+      submitBtn.disabled = false;
+      submitBtn.innerText = "Submit Message";
     });
 }
