@@ -57,7 +57,7 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#Footer">Social Link</a>
             </li>
-            <a href="Assets/rotate image.png" download class="btn btn-success" id="cv-button">
+            <a href="Assets/hero section/CV/CV Ritesh M.pdf" download class="btn btn-success" id="cv-button">
               Download CV
             </a>
         </div>
@@ -351,7 +351,7 @@
   </section>
 
   <!-- Form Section -->
-  <section class="contact-form max-vw-100 my-5  py-5 " id="form">
+  <section class=" contact-form max-vw-100 my-5  py-5 " id="form">
     <div class="container col-lg-10 p-4 border rounded-4" style="background-color:midnightblue">
       <div class="row p-2">
         <div class="col-12 col-lg-6">
@@ -362,16 +362,18 @@
             </div>
 
             <form>
-              <label class="form-label px-2" id="name">Name</label>
-              <input type="text" class="form-control" placeholder="Enter your name">
-
+              <div class="form-floating mb-3">
+                <input type="Name" class="form-control" id="floatingInput" placeholder="Ritesh ">
+                <label for="floatingInput">Name</label>
+              </div>
               <label for="exampleInputEmail1" class="form-label px-2" id="email">Email address</label>
-              <input type="email" placeholder="Enter your mail" class="form-control" id="exampleInputEmail1"
+              <input type="email" placeholder="Enter your mail" class="form-control  " id="exampleInputEmail1"
                 aria-describedby="emailHelp">
+
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label pt-3 px-2" id="message">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Message</label>
           </div>
 
           <div class="d-grid gap-2 col-12 mx-auto">
